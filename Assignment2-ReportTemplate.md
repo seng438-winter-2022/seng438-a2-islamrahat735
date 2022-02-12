@@ -215,6 +215,12 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
 | calculateColumnTotalForTwoRowswithNegValues()| Column with 2 rows with only negative values | Pass |
 | calculateColumnTotalForThreeRowswithPosNegValues()| Column with 3 rows with positive and negative values| Pass |
 
+|    calculateColumnTotal(Values2D data, int col, int[] valRows)   | Equivalence Class Partition | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testAValidInputUsingEdgeRowsForMethodCalculateColumnTotal()      | Find Total Row Value using the first and last column       | Pass - return value is as expected   |
+| testAValidInputUsingMiddleRowsForMethodCalculateColumnTotal()   | Find Total Row Value using the middle columns        | Pass - return value is as expected      |
+| testInvalidRowsForMethodCalculateColumnTotal()   | Find Total Row Value using an invalid column with the expectation of an exception to be thrown        | Fail - exception was expected to be thrown due to an invalid row number  |
+
 
 
 # 4 How the team work/effort was divided and managed
