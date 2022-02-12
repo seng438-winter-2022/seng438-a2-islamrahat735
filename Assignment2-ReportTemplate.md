@@ -21,6 +21,13 @@ The partitions for calculateColumnTotal tested on a Values2D object with 5 eleme
 
 We have tested the boundary values and edges cases for each of our methods. Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
 
+| getLength()| Boundary Values & Edge Cases | Status |
+|    :----:   |    :----:   |    :----:     |
+| testGetLengthZeroZero()| Range: (0,0) | Pass |
+| testGetLengthZeroPINF()| Range: (0,+INF) | Pass |
+| testGetLengthNINFZero()| Range: (-INF,0) | Fail |
+
+
 |    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
 |    :----:   |    :----:   |    :----:     |
 | testEmptyArraysEquality()      |A: [[]]    B: [[]]   | Pass   |
@@ -60,6 +67,8 @@ boolean getLength() equivalence class partitions:
   * (Positive, Positive)
   * (Negative, Positive)
   * (Negative, Negative)
+  * (Zero, Positive)
+  * (Negative, Zero)
  
 
 boolean contains(double val) equivalence/boundary partitions:
@@ -148,6 +157,22 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
 | centralValueShouldBeTwo()| Same values for range (2,2)| Pass |
 | centralValueShouldBeOneAndHalf()| Abnormal values for range (1,2)| Pass |
 
+| getLength()| Equivalence Class Partition | Status |
+|    :----:   |    :----:   |    :----:     |
+| testGetLengthPositivePositive()| (Positive, Positive) | Pass |
+| testGetLengthNegativePositive()| (Negative, Positive) | Pass |
+| testGetLengthNegativeNegative()| (Negative, Negative)| Pass |
+| testGetLengthZeroPositive()| (Zero, Positive) | Pass |
+| testGetLengthNegativeZero()| (Negative, Zero)| Pass |
+
+
+| getLength()| Boundary Values & Edge Cases | Status |
+|    :----:   |    :----:   |    :----:     |
+| testGetLengthZeroZero()| Range: (0,0) | Pass |
+| testGetLengthZeroPINF()| Range: (0,+INF) | Pass |
+| testGetLengthNINFZero()| Range: (-INF,0) | Fail |
+
+
 
 **DataUtilities Class**
 
@@ -203,3 +228,7 @@ The effort was divided equally between the four members of our group. Each of us
 * In hindsight, it would have probably been a better idea if only 1-2 members wrote the the whole report.
 
 # 6 Comments/feedback on the lab itself
+
+This assignment has greatly helped us familiarise with the fundamental concepts of automated unit testing specifically unit testing based on requirements for each unit.
+Moreover, it helped us familiarise on the usage of JUnit framework and the purpose of mock objects in test-code developent. It has also provided us with an opportunity to learn about each person’s strengths and weaknesses, and in future assignments we hope to utilise this knowledge in order to further streamline our group work. Finally, the lab document was a great way to summarize and document our work throughout the lab which could serve as a great reference tool for future assignments.
+
