@@ -17,6 +17,8 @@ The purpose of this lab is to explore automated unit-testing and more specifical
 
 We used a black-box testing technique known as Boundary Value Analysis (BVA) in order to check for errors at the boundaries of an input domain. Both invalid and valid parameters were used for a given range. Boundary Value Analysis was used in methods such as contains() in the Range class. For each of the methods, we first figured out boundaries, from this we then created equivalence class partitions.
 
+The partitions for calculateColumnTotal tested on a Values2D object with 5 elements, one with 2 elements and one with 3 elements. Each Values2D object was mocked to return a specific size, with values in each cell.
+
 We have tested the boundary values and edges cases for each of our methods. Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
 
 |    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
@@ -74,6 +76,12 @@ Range combine(Range range1, Range range2)
   * range1 is a valid range and range2 is null
   * both ranges are null
 
+double getCentralValue() equivalence class partitions:
+
+  * Find a range with normal values to test (integer result)
+  * Find a range with the same values
+  * Find a range with abnormal values (non-integer result)
+
 **DataUtilities Class**
 
 double calculateRowTotal(Values2D data, int row) equivalence class partitions:
@@ -95,6 +103,12 @@ boolean equal(double[][], double[][]) equivalence/boundary partitions:
   * Arrays with same dimensions and values
   * Arrays with different dimensions but all same values 
   * Arrays with different Arrays with any dimensions and different value
+
+static double calculateColumnTotal(Values2D data, int column) equivalence class partitions:
+
+  * Column with 5 rows created with 5 positive values and check if their sum adds up to a positive number
+  * Column with 2 rows created with only negative values and check if their sum adds up
+  * Column with 3 rows created with positive and negative values and check if their sum adds up
 
 // including the input partitions you have designed
 
@@ -125,6 +139,11 @@ boolean equal(double[][], double[][]) equivalence/boundary partitions:
 | combineValidRangeWithSubsetRange() | range1 and range2 are valid ranges and range2 is a subset of range1 | Pass - returns correct range as expected |
 | combine1NullAndValidRange() | range1 is a valid range and range2 is null | Pass - returns range1 as expected |
 | combine2NullRange() | both ranges are null | Pass - returns null as expected |
+
+| getCentralValue()| Equivalence Class Partition| Status |
+| centralValueShouldBeThree()| Normal values for range (2,4)| Pass |
+| centralValueShouldBeTwo()| Same values for range (2,2)| Pass |
+| centralValueShouldBeOneAndHalf()| Abnormal values for range (1,2)| Pass |
 
 
 **DataUtilities Class**
@@ -161,7 +180,13 @@ boolean equal(double[][], double[][]) equivalence/boundary partitions:
 | testAValidInputUsingMiddleColumnsForMethodCalculateRowTotal()   | Find Total Row Value using the middle columns        | Pass - return value is as expected      |
 | testInvalidColumnsForMethodCalculateRowTotal()   | Find Total Row Value using an invalid column with the expectation of an exception to be thrown        | Fail - exception was expected to be thrown due to an invalid column number  |
 
-Text…
+
+| calculateColumnTotal( Values2D data, int column )| Equivalence Class Partition | Status |
+|    :----:   |    :----:   |    :----:     |
+| calculateColumnTotalForFiveRows() | Column with 5 rows | Pass |
+| calculateColumnTotalForTwoRowswithNegValues()| Column with 2 rows with only negative values | Pass |
+| calculateColumnTotalForThreeRowswithPosNegValues()| Column with 3 rows with positive and negative values| Pass |
+
 
 // write down the name of the test methods and classes. Organize the based on
 the source code method // they test. identify which tests cover which partitions
