@@ -82,6 +82,8 @@ double getCentralValue() equivalence class partitions:
   * Find a range with the same values
   * Find a range with abnormal values (non-integer result)
 
+
+
 **DataUtilities Class**
 
 double calculateRowTotal(Values2D data, int row) equivalence class partitions:
@@ -110,7 +112,6 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
   * Column with 2 rows created with only negative values and check if their sum adds up
   * Column with 3 rows created with positive and negative values and check if their sum adds up
 
-// including the input partitions you have designed
 
 # 3 Test cases developed
 
@@ -190,9 +191,6 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
 | calculateColumnTotalForThreeRowswithPosNegValues()| Column with 3 rows with positive and negative values| Pass |
 
 
-// write down the name of the test methods and classes. Organize the based on
-the source code method // they test. identify which tests cover which partitions
-you have explained in the test strategy section //above
 
 # 4 How the team work/effort was divided and managed
 
