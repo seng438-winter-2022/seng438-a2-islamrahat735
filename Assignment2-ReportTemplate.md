@@ -51,6 +51,13 @@ String toString() equivalence class partitions:
   * (Any, Negative)
   * (Any, Zero)
   * (Any, Positive)
+
+
+boolean getLength() equivalence class partitions:
+
+  * (Positive, Positive)
+  * (Negative, Positive)
+  * (Negative, Negative)
  
 
 boolean contains(double val) equivalence/boundary partitions:
