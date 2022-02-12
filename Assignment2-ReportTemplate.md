@@ -140,7 +140,9 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
 | combine1NullAndValidRange() | range1 is a valid range and range2 is null | Pass - returns range1 as expected |
 | combine2NullRange() | both ranges are null | Pass - returns null as expected |
 
-| getCentralValue()| Equivalence Class Partition| Status |
+
+| getCentralValue()| Equivalence Class Partition | Status |
+|    :----:   |    :----:   |    :----:     |
 | centralValueShouldBeThree()| Normal values for range (2,4)| Pass |
 | centralValueShouldBeTwo()| Same values for range (2,2)| Pass |
 | centralValueShouldBeOneAndHalf()| Abnormal values for range (1,2)| Pass |
