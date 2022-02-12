@@ -30,21 +30,21 @@ Drawbacks:
 
 toString() equivalence class partitions:
 
-  * (Negative, Any) = (-3, 1)
-  * (Zero, Any) = (0, 3)
-  * (Positive, Any) = (1,3)
-  * (Any, Negative) = (-3, -1)
-  * (Any, Zero) = (-1, 0)
-  * (Any, Positive) = (1, 3)
+  * (Negative, Any)
+  * (Zero, Any)
+  * (Positive, Any)
+  * (Any, Negative)
+  * (Any, Zero)
+  * (Any, Positive)
 
 **DataUtilities Class**
 
 calculateRowTotal(Values2D data, int row) equivalence class partitions:
 
-  * Row with 1 column = [5]
-  * Row with columns adding up to positive value = [5,5]
-  * Row with columns adding up to zero value = [5, -5]
-  * Row with columns adding up to negative value = [0, -5]
+  * Row with 1 column
+  * Row with columns adding up to positive value
+  * Row with columns adding up to zero value
+  * Row with columns adding up to negative value
   * Null as Values2D parameter
 
 // including the input partitions you have designed
