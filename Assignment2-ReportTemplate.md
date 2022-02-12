@@ -108,6 +108,24 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | calculateRowTotalNeg()   | Row with columns adding up to negative value        | Pass      |
 | calculateRowTotalIllegalArgumentException()   | Null as Values2D parameter        | Pass      |
 
+|    equal(double[][] a, double[][] b)   | Equivalence Class Partition | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testEqualArraysEquality()       | Arrays with same dimensions and values     | Pass   |
+| testUnequalArraysEquality()   | Arrays with different dimensions but all same values     | Pass      |
+| testUnequalDimesionsArraysEquality()   | Arrays with different Arrays with any dimensions and different values       | Pass      |
+
+|    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testEmptyArraysEquality()      |A: [[]]    B: [[]]   | Pass   |
+| test2NULLArraysEquality()   | A: null    B: null   | Pass      |
+| test1NULLand1NormalArrayEquality()   | A: null     B: [[1]]       | Pass      |
+| test1NULLand1EmptyArrayEquality()      | A: null    B: [[]]     | Pass   |
+| test2INFArraysEquality()   | A: [[INF]]    B: [[INF]]     | Pass      |
+| test2NANArraysEquality()   | A: [[NaN]]    B: [[NaN]]       | Pass      |
+| test1NANand1INFArrayEquality()   |  A: [[NaN]]    B: [[INF]]   | Pass      |
+
+
+
 |    calculateRowTotal(Values2D data, int row, int[] valCols)   | Equivalence Class Partition | Status     |
 |    :----:   |    :----:   |    :----:     |
 | testAValidInputUsingEdgeColumnsForMethodCalculateRowTotal()      | Find Total Row Value using the first and last column       | Pass - return value is as expected   |
