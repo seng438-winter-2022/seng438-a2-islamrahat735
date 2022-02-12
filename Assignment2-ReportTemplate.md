@@ -77,6 +77,14 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | isStringZeroHi()   | (Any, Zero)        | Pass      |
 | isStringPosHi()   | (Any, Positive)        | Pass      |
 
+|  boolean contains(double val) | Equivalence Class Partition | Status |
+| :----: | :----: | :-----: |
+| rangeContainsAboveLowerBound()| val is just above the lower boundary and below the upper boundary | Pass - returns true as expected |
+| rangeContainsBelowUpperBound()| val is just below the upper boundary and above the lower boundary | Pass - returns true as expected |
+| rangeDoesntContainAboveUpperBound()| val is below the lower boundary | Pass - returns false as expected |
+| rangeDoesntContainBelowLowerBound()| val is above the upper coundary | Pass - returns false as expected |
+
+
 **DataUtilities Class**
 
 |    calculateRowTotal(Values2D data, int column)   | Equivalence Class Partition | Status     |
