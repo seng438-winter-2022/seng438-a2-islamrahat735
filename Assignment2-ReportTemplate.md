@@ -122,7 +122,7 @@ you have explained in the test strategy section //above
 
 # 4 How the team work/effort was divided and managed
 
-Each of the group members were tasked with testing 2-3 methods from Range and DataUtilities class. Once the testing phase was over, we all came together to share our results. In case of any discrepencies or issues, we re-visited the testing phase in order to rectify the issues. Once all issues had been dealt with, we came together and created the report.
+The effort was divided equally between the four members of our group. Each of us selected at least two methods, one from Range class and one from DataUtilities class, to write Unit tests for. Our next step was to plan how we would design our test cases and document the strategy. Next, we wrote our test cases and reviewed each other’s work to ensure we maintain a high standard for the tests written. We communicated through zoom and discord to explain our code to each other and discuss key theoretical concepts learned during the assignment. 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
