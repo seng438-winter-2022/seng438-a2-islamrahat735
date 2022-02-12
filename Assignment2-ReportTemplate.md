@@ -51,6 +51,7 @@ String toString() equivalence class partitions:
   * (Any, Negative)
   * (Any, Zero)
   * (Any, Positive)
+ 
 
 boolean contains(double val) equivalence/boundary partitions:
   
@@ -81,6 +82,12 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
   * choose 1st and last column for valid rows
   * choose middle columns for valid rows
   * choose a column that is out of bound
+
+boolean equal(double[][], double[][]) equivalence/boundary partitions:
+
+  * Arrays with same dimensions and values
+  * Arrays with different dimensions but all same values 
+  * Arrays with different Arrays with any dimensions and different value
 
 // including the input partitions you have designed
 
