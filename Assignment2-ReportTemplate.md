@@ -95,7 +95,7 @@ double getCentralValue() equivalence class partitions:
 
 **DataUtilities Class**
 
-double calculateRowTotal(Values2D data, int row) equivalence class partitions:
+static double calculateRowTotal(Values2D data, int row) equivalence class partitions:
 
   * Row with 1 column
   * Row with columns adding up to positive value
@@ -103,7 +103,7 @@ double calculateRowTotal(Values2D data, int row) equivalence class partitions:
   * Row with columns adding up to negative value
   * Null as Values2D parameter
 
-double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/boundary class partitions:
+static double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/boundary class partitions:
 
   * choose 1st and last column for valid rows
   * choose middle columns for valid rows
@@ -120,6 +120,12 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
   * Column with 5 rows created with 5 positive values and check if their sum adds up to a positive number
   * Column with 2 rows created with only negative values and check if their sum adds up
   * Column with 3 rows created with positive and negative values and check if their sum adds up
+
+static double calculateColumnTotal(Values2D data, int col, int[] validRows) equivalence/boundary class partitions:
+
+  * choose 1st and last rows for valid columns
+  * choose middle rows for valid columns
+  * choose a row that is out of bounds
 
 
 # 3 Test cases developed
@@ -217,9 +223,9 @@ static double calculateColumnTotal(Values2D data, int column) equivalence class 
 
 |    calculateColumnTotal(Values2D data, int col, int[] valRows)   | Equivalence Class Partition | Status     |
 |    :----:   |    :----:   |    :----:     |
-| testAValidInputUsingEdgeRowsForMethodCalculateColumnTotal()      | Find Total Row Value using the first and last column       | Pass - return value is as expected   |
-| testAValidInputUsingMiddleRowsForMethodCalculateColumnTotal()   | Find Total Row Value using the middle columns        | Pass - return value is as expected      |
-| testInvalidRowsForMethodCalculateColumnTotal()   | Find Total Row Value using an invalid column with the expectation of an exception to be thrown        | Fail - exception was expected to be thrown due to an invalid row number  |
+| testAValidInputUsingEdgeRowsForMethodCalculateColumnTotal()      | Find Total Column Value using the first and last row       | Pass - return value is as expected   |
+| testAValidInputUsingMiddleRowsForMethodCalculateColumnTotal()   | Find Total Column Value using the middle rows        | Pass - return value is as expected      |
+| testInvalidRowsForMethodCalculateColumnTotal()   | Find Total Column Value using an invalid row with the expectation of an exception to be thrown        | Fail - exception was expected to be thrown due to an invalid row number  |
 
 
 
