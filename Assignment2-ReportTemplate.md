@@ -81,12 +81,12 @@ you have explained in the test strategy section //above
 
 # 4 How the team work/effort was divided and managed
 
-Text…
+Each of the group members were tasked with testing 2-3 methods from Range and DataUtilities class. Once the testing phase was over, we all came together to share our results. In case of any discrepencies or issues, we re-visited the testing phase in order to rectify the issues. Once all issues had been dealt with, we came together and created the report.
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+* Getting all of the dependencies sorted when initially setting up the Eclipse IDE for the project was one of the biggest challenges that we faced.
+* We also faced the issue of inconsitencies when writing up our report.
+* In hindsight, it would have probably been a better idea if only 1-2 members wrote the the whole report.
 
 # 6 Comments/feedback on the lab itself
-
-Text…
