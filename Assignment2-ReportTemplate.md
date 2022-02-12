@@ -108,6 +108,12 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | calculateRowTotalNeg()   | Row with columns adding up to negative value        | Pass      |
 | calculateRowTotalIllegalArgumentException()   | Null as Values2D parameter        | Pass      |
 
+|    equal(double[][] a, double[][] b)   | Equivalence Class Partition | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testEqualArraysEquality()       | Arrays with same dimensions and values     | Pass   |
+| testUnequalArraysEquality()   | Arrays with different dimensions but all same values     | Pass      |
+| testUnequalDimesionsArraysEquality()   | Arrays with different Arrays with any dimensions and different values       | Pass      |
+
 
 
 Text…
