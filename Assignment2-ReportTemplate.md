@@ -11,7 +11,7 @@
 
 # 1 Introduction
 
-The purpose of this lab is to explore automated unit-testing and more specifically, the concept of black-box testing. A total of ten functions is tested using a combination of unit tests and mock tests
+Text…
 
 # 2 Detailed description of unit test strategy
 
@@ -28,7 +28,7 @@ Drawbacks:
 
 **Range Class**  
 
-toString() equivalence class partitions:
+String toString() equivalence class partitions:
 
   * (Negative, Any)
   * (Zero, Any)
@@ -37,17 +37,30 @@ toString() equivalence class partitions:
   * (Any, Zero)
   * (Any, Positive)
 
-Note: Upper Bound >= Lower Bound
+boolean contains(double val) equivalence/boundary partitions:
+  
+  * val is just above the lower boundary and below the upper boundary
+  * val is just below the upper boundary and above the lower boundary
+  * val is below the lower boundary
+  * val is above the upper coundary
+
+
 
 **DataUtilities Class**
 
-calculateRowTotal(Values2D data, int row) equivalence class partitions:
+double calculateRowTotal(Values2D data, int row) equivalence class partitions:
 
   * Row with 1 column
   * Row with columns adding up to positive value
   * Row with columns adding up to zero value
   * Row with columns adding up to negative value
   * Null as Values2D parameter
+
+double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/boundary class partitions:
+
+  * choose 1st and last column for valid rows
+  * choose middle columns for valid rows
+  * choose a column that is out of bound
 
 // including the input partitions you have designed
 
