@@ -44,7 +44,12 @@ boolean contains(double val) equivalence/boundary partitions:
   * val is below the lower boundary
   * val is above the upper coundary
 
+Range combine(Range range1, Range range2)
 
+  * range1 and range2 are valid and disjoint ranges
+  * range1 and range2 are valid ranges and range2 is a subset of range1
+  * range1 is a valid range and range2 is null
+  * both ranges are null
 
 **DataUtilities Class**
 
@@ -82,7 +87,15 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | rangeContainsAboveLowerBound()| val is just above the lower boundary and below the upper boundary | Pass - returns true as expected |
 | rangeContainsBelowUpperBound()| val is just below the upper boundary and above the lower boundary | Pass - returns true as expected |
 | rangeDoesntContainAboveUpperBound()| val is below the lower boundary | Pass - returns false as expected |
-| rangeDoesntContainBelowLowerBound()| val is above the upper coundary | Pass - returns false as expected |
+| rangeDoesntContainBelowLowerBound()| val is above the upper boundary | Pass - returns false as expected |
+
+
+| Range combine( Range range1, Range range2) | Equivalence Class Partition | Status |
+| :----: | :----: | :-----: |
+| combine2DisjointValidRanges() |range1 and range2 are valid and disjoint ranges | Pass - returns correct range as expected |
+| combineValidRangeWithSubsetRange() | range1 and range2 are valid ranges and range2 is a subset of range1 | Pass - returns correct range as expected |
+| combine1NullAndValidRange() | range1 is a valid range and range2 is null | Pass - returns range1 as expected |
+| combine2NullRange() | both ranges are null | Pass - returns null as expected |
 
 
 **DataUtilities Class**
@@ -94,6 +107,7 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | calculateRowTotalZero()   | Row with columns adding up to zero value        | Pass      |
 | calculateRowTotalNeg()   | Row with columns adding up to negative value        | Pass      |
 | calculateRowTotalIllegalArgumentException()   | Null as Values2D parameter        | Pass      |
+
 
 
 Text…
