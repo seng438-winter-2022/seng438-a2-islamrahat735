@@ -17,7 +17,7 @@ The purpose of this lab is to explore automated unit-testing and more specifical
 
 We used a black-box testing technique known as Boundary Value Analysis (BVA) in order to check for errors at the boundaries of an input domain. Both invalid and valid parameters were used for a given range. Boundary Value Analysis was used in methods such as contains() in the Range class. For each of the methods, we first figured out boundaries, from this we then created equivalence class partitions.
 
-Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
+We have tested the boundary values and edges cases for each of our methods. Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
 
 |    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
 |    :----:   |    :----:   |    :----:     |
