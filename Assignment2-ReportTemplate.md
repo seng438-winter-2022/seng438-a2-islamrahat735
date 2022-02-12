@@ -11,7 +11,7 @@
 
 # 1 Introduction
 
-Text…
+The purpose of this lab is to explore automated unit-testing and more specifically, the concept of black-box testing. A total of ten functions is tested using a combination of unit tests and mock tests
 
 # 2 Detailed description of unit test strategy
 
@@ -27,6 +27,8 @@ Drawbacks:
   * Intricacies of the methods get obfuscated
 
 **Range Class**  
+
+Note: Upper bound >= Lower bound
 
 String toString() equivalence class partitions:
 
