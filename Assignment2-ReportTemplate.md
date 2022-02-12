@@ -11,7 +11,7 @@
 
 # 1 Introduction
 
-The purpose of this lab is to explore automated unit-testing and more specifically, the concept of black-box testing. A total of ten functions is tested using a combination of unit tests and mock tests. This was accomplisherd by utilizing Java’s JUnit framework to develop these unit tests. We learned to utilize and work with mock objects in test-code development
+The purpose of this lab is to explore automated unit-testing and more specifically, the concept of black-box testing. A total of ten functions is tested using a combination of unit tests and mock tests. This was accomplisherd by utilizing Java’s JUnit framework to develop these unit tests. We also learned to utilize and work with mock objects in test-code development
 
 # 2 Detailed description of unit test strategy
 
