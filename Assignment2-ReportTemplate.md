@@ -17,6 +17,19 @@ The purpose of this lab is to explore automated unit-testing and more specifical
 
 We used a black-box testing technique known as Boundary Value Analysis (BVA) in order to check for errors at the boundaries of an input domain. Both invalid and valid parameters were used for a given range. Boundary Value Analysis was used in methods such as contains() in the Range class. For each of the methods, we first figured out boundaries, from this we then created equivalence class partitions.
 
+Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
+
+|    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testEmptyArraysEquality()      |A: [[]]    B: [[]]   | Pass   |
+| test2NULLArraysEquality()   | A: null    B: null   | Pass      |
+| test1NULLand1NormalArrayEquality()   | A: null     B: [[1]]       | Pass      |
+| test1NULLand1EmptyArrayEquality()      | A: null    B: [[]]     | Pass   |
+| test2INFArraysEquality()   | A: [[INF]]    B: [[INF]]     | Pass      |
+| test2NANArraysEquality()   | A: [[NaN]]    B: [[NaN]]       | Pass      |
+| test1NANand1INFArrayEquality()   |  A: [[NaN]]    B: [[INF]]   | Pass      |
+
+
 We used Mocking to test methods contained in the DataUtilities class. A library that supports test-driven development of Java code with objects called JMock was used. This allowed us to test methods which take in interfaces as parameters to be tested. Moreover, it allowed dependencies to be accounted for and abstracted.
 
 Benefits:
@@ -115,16 +128,6 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | testEqualArraysEquality()       | Arrays with same dimensions and values     | Pass   |
 | testUnequalArraysEquality()   | Arrays with different dimensions but all same values     | Pass      |
 | testUnequalDimesionsArraysEquality()   | Arrays with different Arrays with any dimensions and different values       | Pass      |
-
-|    equal(double[][] a, double[][] b)   | Boundary Values & Edge Cases | Status     |
-|    :----:   |    :----:   |    :----:     |
-| testEmptyArraysEquality()      |A: [[]]    B: [[]]   | Pass   |
-| test2NULLArraysEquality()   | A: null    B: null   | Pass      |
-| test1NULLand1NormalArrayEquality()   | A: null     B: [[1]]       | Pass      |
-| test1NULLand1EmptyArrayEquality()      | A: null    B: [[]]     | Pass   |
-| test2INFArraysEquality()   | A: [[INF]]    B: [[INF]]     | Pass      |
-| test2NANArraysEquality()   | A: [[NaN]]    B: [[NaN]]       | Pass      |
-| test1NANand1INFArrayEquality()   |  A: [[NaN]]    B: [[INF]]   | Pass      |
 
 
 
