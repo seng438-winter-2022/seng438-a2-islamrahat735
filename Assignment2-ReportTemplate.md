@@ -37,6 +37,8 @@ toString() equivalence class partitions:
   * (Any, Zero)
   * (Any, Positive)
 
+Note: Upper Bound >= Lower Bound
+
 **DataUtilities Class**
 
 calculateRowTotal(Values2D data, int row) equivalence class partitions:
