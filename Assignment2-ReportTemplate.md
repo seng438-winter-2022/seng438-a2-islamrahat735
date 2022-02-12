@@ -226,6 +226,7 @@ The effort was divided equally between the four members of our group. Each of us
 * Getting all of the dependencies sorted when initially setting up the Eclipse IDE for the project was one of the biggest challenges that we faced.
 * We also faced the issue of inconsitencies when writing up our report.
 * In hindsight, it would have probably been a better idea if only 1-2 members wrote the the whole report.
+* We also realised the importance of having descriptive and well-worded comments. We planned to work in pair testing, wherein both groups tested 5 methods each. However, our initial comments had very brief and unclear descriptions which made it hard for the other group to review each other's work as they did not provide a clear idea of the tests performed. We fixed this by providing detailed and clear description for each test which helped us realise the importance of well-structured and documented tests when testing in teams.
 
 # 6 Comments/feedback on the lab itself
 
