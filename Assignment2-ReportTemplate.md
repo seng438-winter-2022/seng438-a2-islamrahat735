@@ -19,7 +19,7 @@ We used a black-box testing technique known as Boundary Value Analysis (BVA) in 
 
 The partitions for calculateColumnTotal tested on a Values2D object with 5 elements, one with 2 elements and one with 3 elements. Each Values2D object was mocked to return a specific size, with values in each cell.
 
-We have tested the boundary values and edges cases for each of our methods. Down below is an example for boundary values and edge case test for a Range and DataUtilities method:
+We have tested the boundary values and edges cases for each of our methods. Down below is an example for boundary values and edge case test for a Range and DataUtilities method respectively:
 
 | getLength()| Boundary Values & Edge Cases | Status |
 |    :----:   |    :----:   |    :----:     |
