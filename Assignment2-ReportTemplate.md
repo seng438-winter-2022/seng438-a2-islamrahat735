@@ -114,7 +114,15 @@ double calculateRowTotal(Values2D data, int row, int[] validCols) equivalence/bo
 | testUnequalArraysEquality()   | Arrays with different dimensions but all same values     | Pass      |
 | testUnequalDimesionsArraysEquality()   | Arrays with different Arrays with any dimensions and different values       | Pass      |
 
-
+|    equal(double[][] a, double[][] b)   | Boundary Values | Status     |
+|    :----:   |    :----:   |    :----:     |
+| testEmptyArraysEquality()      |A: [[]]    B: [[]]   | Pass   |
+| test2NULLArraysEquality()   | A: null    B: null   | Pass      |
+| test1NULLand1NormalArrayEquality()   | A: null     B: [[1]]       | Pass      |
+| test1NULLand1EmptyArrayEquality()      | A: null    B: [[]]     | Pass   |
+| test2INFArraysEquality()   | A: [[INF]]    B: [[INF]]     | Pass      |
+| test2NANArraysEquality()   | A: [[NaN]]    B: [[NaN]]       | Pass      |
+| test1NANand1INFArrayEquality()   |  A: [[NaN]]    B: [[INF]]   | Pass      |
 
 Text…
 
